@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-midnight-blue{
+    background-color: #27ae60;
+}
+
+nav a.active {
+    color: #3182ce;
+    font-weight: bold;
+}
