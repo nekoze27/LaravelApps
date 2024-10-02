@@ -28,5 +28,5 @@
     @isset($lateAssetLoad)
         {!! $lateAssetLoad !!}
         @endisset
-    </body>
+    {{-- </body> --}}
 </html>

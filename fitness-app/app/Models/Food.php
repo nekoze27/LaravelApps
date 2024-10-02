@@ -28,6 +28,11 @@ class Food extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function diaryFoodItems()
+    {
+        return $this->hasMany(DiaryFoodItem::class, 'food_id');
+    }
+
     public function getTotalCalories(): float
     {
         return  ($this->protein * 4) + ($this->carbs * 4) + ($this->fat * 9);
